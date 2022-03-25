@@ -1,4 +1,4 @@
-const { Restaurant } = require('../models')
+const { Reviews } = require('../models')
 
 const reviewdata = [
     {
