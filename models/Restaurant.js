@@ -18,12 +18,18 @@ Restaurant.init(
     restaurant_name: {
       type:DataTypes.STRING,
       allowNull:false
-
+    },
+    restaurant_description: {
+      type:DataTypes.STRING,
+      allowNull:false
     },
     cuisine_id: {
-      type:DataTypes.DECIMAL,
+      type:DataTypes.INTEGER,
+      references: {
+        model: 'cuisine',
+        key: 'id'
+      },
       allowNull: false
-
     },
     rating: {
       type:DataTypes.INTEGER,
