@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const { Comment } = require('../../models');
+const { Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
-  Comment.findAll()
+  Review.findAll()
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
       console.log(err);
@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    Comment.findAll({
+    Review.findAll({
             where: {
                 id: req.params.id
             }
