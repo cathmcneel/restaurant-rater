@@ -1,31 +1,44 @@
 // import models
 const Restaurant = require('./Restaurant');
-const Cuisines = require('./Cuisines');
-const Reviews = require('./Reviews');
-const ProductTag = require('./ProductTag');
+const Cuisine = require('./Cuisine');
+const Review = require('./Review');
+const User = require('./User');
+// const ProductTag = require('./ProductTag');
 
 // Products belongsTo Category
-Restaurant.belongsTo(Cuisines, {
+Restaurant.belongsTo(Cuisine, {
   foreignKey: 'cuisine_id',
-  onDelete: 'CASCADE'
+  // onDelete: 'CASCADE'
 })
 // Categories have many Products
-Cuisines.hasMany(Restaurant, {
-  foreignKey: 'category_id'
+Cuisine.hasMany(Restaurant, {
+  foreignKey: 'cuisine_id'
 })
 // 
-Reviews.belongsToMany(Restaurant, {
-
-
+Restaurant.hasMany(Review, {
+  foreignKey: 'restaurant_id'
 })
-// 
-Reviews.belongsToMany(Restaurant, {
 
+Review.belongsTo(Restaurant, {
+  foreignKey: 'restaurant_id'
 })
+// // 
+// Reviews.belongsToMany(Restaurant, {
+//   foreignKey:''
+// })
+User.hasMany(Review, {
+  foreignKey: 'user_id'
+})
+
+Review.belongsTo(User, {
+  foreignKey: 'user_id'
+})
+
 
 
 module.exports = {
   Restaurant,
-  Cuisines,
-  Reviews,
+  Cuisine,
+  Review,
+  User
 };

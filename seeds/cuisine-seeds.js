@@ -1,6 +1,6 @@
-const { Cuisines } = require('../models')
+const { Cuisine } = require('../models')
 
-const cuisinedata = [
+const cuisineData = [
     {
         cuisine_name: 'French restaurant'
     },
@@ -13,6 +13,6 @@ const cuisinedata = [
 ]
 
 
-const seedCuisines = () => User.bulkCreate( cuisinedata, {individualHooks: true});
+const seedCuisines = () => Cuisine.bulkCreate( cuisineData, {individualHooks: true});
 
 module.exports = seedCuisines;
