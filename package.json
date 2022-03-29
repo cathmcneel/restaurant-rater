@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seeds": "node seeds/index.js",
-    "start": "node server.js"
+    "start": "node server.js",
+     "build-css": "tailwindcss build style.css -o css/style.css"
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,9 @@
     "jest": "^27.5.1",
     "mysql2": "^2.3.3",
     "sequelize": "^6.17.0"
+
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
   }
 }
