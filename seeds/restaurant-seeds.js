@@ -48,6 +48,12 @@ const restaurantData = [
         restaurant_description: 'Steakhouse',
         cuisine_id: 8,
         rating: 4
+    },
+    {
+        restaurant_name: 'Florios Pizza',
+        restaurant_description: 'Small Pizza Joint',
+        cuisine_id: 9,
+        rating: 5
     }
 ]
 
