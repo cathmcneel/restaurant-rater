@@ -6,7 +6,8 @@ async function reviewFormHandler(event) {
       window.location.toString().split('/').length - 1
     ];
   
-    if (review_text) {
+    if (review_description) {
+
       const response = await fetch('/api/reviews', {
         method: 'POST',
         body: JSON.stringify({
@@ -17,6 +18,7 @@ async function reviewFormHandler(event) {
           'Content-Type': 'application/json'
         }
       });
+
       if (response.ok) {
         document.location.reload();
       } else {

@@ -2,38 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant-rater</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://kit.fontawesome.com/ce42a2d071.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="wrapper">
-        <header>
-            <div>
-            <nav class"nav">
-                <a class="link" href="/">Home</a>
-                <a class="link" href="/dashboard">Dashboard</a>
-                {{#if loggedIn}}
-                <a class="link" href="/" id="logout">Logout</a>
-                {{else}}
-                <a class="link" href="/login">Login</a>
-                {{/if}}
-            </nav>
-            </div>
-        </header>
-        <main>
-            {{{ body }}}
-        </main>
-        <footer>
-            Thanks for visiting!
-        </footer>
-    </div>
+  <div class="wrapper">
+    <header>
+        <h1 class="has-text-black px-3 py-3 has-text-weight-bold"> <figure class="image is-128x128">
+  <img src="assets/logo.png">
+</figure>Restaurant Rater</h1>
+       
+        <nav class="navbar mt-2">
+            {{#if loggedIn}}
+            <a href="/" class="navbar-item is-hoverable pt-1">Homepage</a>
+            <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
+            <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4">Add Restaurant</a>
+            <button id="logout" class="button is-danger">Logout</button>
+            {{else}}
+            <a href="/" class="navbar-item is-hoverable pt-1">Homepage</a>
+            <a href="/login" class="button is-primary">Login</a>
+            {{/if}}
+        </nav>
 
-    {{#if loggedIn}}
-    <script src="/javascript/logout.js"></script>
-    {{/if}}
+       
+    </header>
+    <section class="hero">
+  <div class="hero-body">
+    <p class="title">
+     <i class="fa-solid fa-utensils"> Eat, </i> <i class="fa-solid fa-magnifying-glass-dollar"> Review, </i><i class="fa-solid fa-star-half-stroke"> Rate!</i>
+    </p>
+     <figure class="image is-3by1">
+  <img src="https://restaurantclicks.com/wp-content/uploads/2020/02/restaurant-review-site.jpg">
+</figure>
+  </div>
+</section>
+
+    <main>
+            {{{ body }}}
+    </main>
+
+    <footer class="footer rows has-background-light pb-2">
+        <div class="row-is-full content has-text-centered">
+            <p>
+            <a href="/">Homepage</a>{{#if loggedIn}} | 
+            <a href="/dashboard/">Dashboard</a> | 
+            <a href="/dashboard/create/">Add Restaurant</a>
+            {{else}}
+             | <a href="/login/">Login</a>
+            {{/if}}
+            </p>
+        </div>
+         <div class="row-is-full content has-text-centered">
+    <p>
+      <strong>Restaurant Rater</strong> by <a href="https://github.com/cathmcneel">Catherine McNeel, </a><a href="https://github.com/ishelly1997">Isabel shelly, </a><a href="https://github.com/HandsomeDingor">Junjie Wu, </a><a href="https://github.com/glgberat">Mehmet B Huyuk </a> | made with <a href="https://bulma.io/">bulma</a> | source code:
+      <a href="https://github.com/cathmcneel/restaurant-rater"><i class="fab fa-github"></i></a>
+    </p>
+  </div>
+    </footer>
+  </div>
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+
 </body>
 
 </html>
