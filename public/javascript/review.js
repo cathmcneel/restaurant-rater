@@ -7,6 +7,7 @@ async function reviewFormHandler(event) {
     ];
   
     if (review_description) {
+
       const response = await fetch('/api/reviews', {
         method: 'POST',
         body: JSON.stringify({

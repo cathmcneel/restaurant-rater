@@ -18,6 +18,7 @@ const restaurantData = [
         restaurant_description: 'It is an American chain of fast casual restaurants in the United States',
         cuisine_id: 3,
         rating: 4
+
     },
     {
         restaurant_name: 'Cafe Bella Vita Italian Restaurant',
@@ -37,6 +38,7 @@ const restaurantData = [
         cuisine_id: 3,
         rating: 2
     },
+
 ]
 
 

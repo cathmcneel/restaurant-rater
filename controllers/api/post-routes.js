@@ -3,6 +3,7 @@ const sequelize = require('../../config/connection');
 const { Restaurant, User, Review, Cuisine } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+
 // // get all users
 // // router.get('/', (req, res) => {
 // //   Restaurant.findAll({

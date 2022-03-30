@@ -19,10 +19,12 @@ Restaurant.init(
       type:DataTypes.STRING,
       allowNull:false
     },
+
     sanitation_grade: {
       type:DataTypes.STRING,
       allowNull:true
     },
+
     restaurant_description: {
       type:DataTypes.STRING,
       allowNull:false
