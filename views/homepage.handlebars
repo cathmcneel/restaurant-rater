@@ -1,7 +1,47 @@
-<ol class="post-list">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Rater</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+</head>
+    <ol class="post-list">
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
   </li>
   {{/each}}
 </ol>
+
+
+{{!--  
+    <main>
+            {{{ body }}}
+    </main>
+    <footer class="footer rows pb-2">
+        <div class="row-is-full content has-text-centered">
+            <p>
+            <a href="/">homepage</a>{{#if loggedIn}} |
+            <a href="/dashboard/">dashboard</a> |
+            <a href="/dashboard/create/">create new post</a>
+            {{else}}
+             | <a href="/login/">login</a>
+            {{/if}}
+            </p>
+        </div>
+    </footer>
+  </div>
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+</body>
+</html> --}}
+
+
+
+

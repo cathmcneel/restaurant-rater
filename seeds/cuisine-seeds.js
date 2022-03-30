@@ -2,10 +2,10 @@ const { Cuisine } = require('../models')
 
 const cuisineData = [
     {
-        cuisine_name: 'French restaurant'
+        cuisine_name: 'French Restaurant'
     },
     {
-        cuisine_name: 'coffee shop'
+        cuisine_name: 'Coffee Shop'
     },
     {
         cuisine_name: 'Mexican Grill'
