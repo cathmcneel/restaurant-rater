@@ -5,7 +5,7 @@ const cuisineData = [
         cuisine_name: 'French restaurant'
     },
     {
-        cuisine_name: 'coffee shop'
+        cuisine_name: 'Japanese Restaurant'
     },
     {
         cuisine_name: 'Mexican Grill'
