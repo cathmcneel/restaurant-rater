@@ -1,5 +1,117 @@
-.box:last-child { margin-bottom: 1.5rem; }
-
-.login-box {
-    border: black solid 5px;
+*{
+    margin: 2px;
+    
 }
+
+/* Login Page formatting */
+#login-form {
+    background-color: #EBEDEF ;
+}
+#field-card {
+    margin: 5px;
+    background-color: #EBEDEF;
+
+}
+#login-box {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}
+.main-login {
+    margin: 3px;
+    padding: 3px;
+    width: 500px;
+    background-color: #EBEDEF ;
+    border: 3px solid #EBEDEF;
+    border-radius: 8px;
+   
+}
+#log-title {
+    color: white;
+    font-family: Didot; 
+    font-size: 25px; 
+    font-style: normal;
+    justify-content: center;
+    padding: 3px;
+    margin: 10px;
+    background-color: #808B96;
+    font-weight: bolder;
+}
+#username {
+    color: #212F3D;
+    font-family: Didot; 
+    font-size: 20px; 
+    font-style: normal;
+    justify-content: center;
+    font-weight: bold;
+}
+#password {
+    color: #212F3D;
+    font-family: Didot; 
+    font-size: 20px; 
+    font-style: normal;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #EBEDEF ;
+}
+#sign-up {
+    color: #212F3D;
+}
+#login-button {
+    margin-left: 200px;
+    justify-content: center;
+}
+
+/*Homepage and nav bar formatting */
+#rrtitle {
+    color: #212F3D;
+    font-family: Didot; 
+    font-size: 60px; 
+    font-style: normal;
+}
+
+#home {
+    color: #212F3D;
+    margin: 15px;
+    font-size:x-large;
+    font-family: Didot; 
+    font-size: 30px; 
+    font-style: normal;
+}
+
+#dashboard {
+    color: #212F3D;
+    margin: 15px;
+    font-size:x-large;
+    font-family: Didot; 
+    font-size: 30px; 
+    font-style: normal;
+}
+
+#login {
+    color: #212F3D;
+    margin-bottom: 1.5rem;
+    margin: 15px;
+    font-size:x-large;
+    font-family: Didot; 
+    font-size: 30px; 
+    font-style: normal;
+}
+
+#navbar {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+    border: #5D6D7E solid 3px;
+    background-color: #85929E;
+    align-items: center;
+    border-radius: 7px;
+}
+
+
+
+
+

@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant-rater</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
 <header>
-    <h1 class="title is-1">Restaurant Rater</h1>
+    <h1 id="rrtitle" class="title is-1">Restaurant Rater</h1>
 </header>
 <br>
 
@@ -17,19 +18,21 @@
 {{!-- Use media object to style with bulma --}}
 <body>
     <div class="wrapper">
-        <header>
+        <div>
+        <header id="navbar">
             <div>
-            <nav class=" columns nav">
-                <a class="box column link" href="/">Home</a>
-                <a class=" box column link" href="/dashboard">Dashboard</a>
+            <nav class="columns nav">
+                <a id="home" class="box column link" href="/">Home</a>
+                <a id="dashboard" class="box column link" href="/dashboard">Dashboard</a>
                 {{#if loggedIn}}
-                <a class=" box column link" href="/" id="logout">Logout</a>
+                <a class="box column link" href="/" id="logout">Logout</a>
                 {{else}}
-                <a class=" box column link" href="/login">Login</a>
+                <a id="login" class="box column link" href="/login">Login</a>
                 {{/if}}
             </nav>
             </div>
         </header>
+        </div>
         <main>
             {{{ body }}}
         </main>
