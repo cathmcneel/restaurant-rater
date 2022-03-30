@@ -107,12 +107,53 @@
     justify-content: center;
     border: #5D6D7E solid 3px;
     background-color: #85929E;
-    align-items: center;
     border-radius: 7px;
+    align-items: center;
+    
 }
 
 /* Homepage restaurant card formatting */
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.media {
+    width: 30%;
+    border: #5D6D7E solid 3px;
+    background-color: #85929E;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.media-left {
+    border: #5D6D7E solid 3px;
+    color: #212F3D;
+    margin: 15px;
+    font-size:x-large;
+    font-family: Didot; 
+    font-size: 30px; 
+    font-style: normal;
+    background-color: #EBEDEF;
+    width: 90%;
+    border-radius: 7px;
+}
+#rest-name {
+    border: #5D6D7E solid 3px;
+    color: #212F3D;
+    margin: 15px;
+    font-size: medium;
+    font-family: Didot; 
+    font-size: 30px; 
+    font-style: normal;
+    background-color: #EBEDEF;
+    width: 40%;
+    border-radius: 7px;
+}
 
 

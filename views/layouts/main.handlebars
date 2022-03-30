@@ -5,35 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant-rater</title>
-    <link type="text/css" rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
+   
 </head>
 <div class="wrapper"></div>
 <header>
     <h1 id="rrtitle" class="title is-1">Restaurant Rater</h1>
-    <h1 class="has-text-black px-3 py-3 has-text-weight-bold"> <figure class="image is-128x128">
-  <img src="assets/logo.png">
+    {{!-- <h1 class="has-text-black px-3 py-3 has-text-weight-bold"> <figure class="image is-128x128">
+  <img src="assets/logo.png"> --}}
 </header>
 <br>
 
 <body>
-      <div class="wrapper">
+      {{!-- <div class="wrapper"> --}}
           <div>
           <header id="navbar">
               <div>
-                <nav class="navbar mt-2">
+       
+            <nav class="columns nav">
+                <a id="home" class="box column link" href="/">Home</a>
+                <a id="dashboard" class="box column link" href="/dashboard">Dashboard</a>
+                {{#if loggedIn}}
+        
+                <a class="box column link" href="/" id="logout">Logout</a>
+                {{else}}
+  
+                <a id="login" class="box column link" href="/login">Login</a>
+                {{/if}}
+            {{!-- </nav>
+                <nav class="navbar">
                     {{#if loggedIn}}
-                      <a href="/" class="navbar-item is-hoverable pt-1">Homepage</a>
-                      <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
-                      <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4">Add Restaurant</a>
+                      <a href="/" class="navbar-item">Homepage</a>
+                      <a href="/dashboard" class="navbar-item">Dashboard</a>
+                      <a href="/dashboard/create/" class="navbar-item">Add Restaurant</a>
                       <button id="logout" class="button is-danger">Logout</button>
                     {{else}}
-                      <a href="/" class="navbar-item is-hoverable pt-1">Homepage</a>
+                      <a href="/" class="navbar-item">Homepage</a>
                       <a href="/login" class="button is-primary">Login</a>
                     {{/if}}
-                </nav>
+                </nav> --}}
             </div>
-            <section class="hero">
+            {{!-- <section class="hero">
               <div class="hero-body">
                 <p class="title">
                   <i class="fa-solid fa-utensils"> Eat, </i> <i class="fa-solid fa-magnifying-glass-dollar"> Review, </i><i class="fa-solid fa-star-half-stroke"> Rate!</i>
@@ -42,7 +55,7 @@
                     <img src="https://restaurantclicks.com/wp-content/uploads/2020/02/restaurant-review-site.jpg">
                   </figure>
               </div>
-            </section>
+            </section> --}}
           </header>
           </div>
         <main>
@@ -66,7 +79,7 @@
             </p>
           </div>
           </footer>
-        </div>
+        {{!-- </div> --}}
     </div>
 
       {{#if loggedIn}}
