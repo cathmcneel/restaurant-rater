@@ -18,6 +18,7 @@ const restaurantData = [
         restaurant_description: 'Mexican fast casual',
         cuisine_id: 3,
         rating: 4
+<<<<<<< HEAD
     },
     {
         restaurant_name: 'Shake Shack',
@@ -55,6 +56,29 @@ const restaurantData = [
         cuisine_id: 9,
         rating: 5
     }
+=======
+
+    },
+    {
+        restaurant_name: 'Cafe Bella Vita Italian Restaurant',
+        restaurant_description: 'Italian Food',
+        cuisine_id: 2,
+        rating: 5
+    },
+    {
+        restaurant_name: 'Zara Cafe Grill',
+        restaurant_description: 'Coffe and grill',
+        cuisine_id: 2,
+        rating: 4
+    },
+    {
+        restaurant_name: 'French Louie',
+        restaurant_description: 'A French-American restaurant and cafe in Brooklyn.',
+        cuisine_id: 3,
+        rating: 2
+    },
+
+>>>>>>> develop
 ]
 
 

@@ -1,6 +1,8 @@
 <div class="card">
     <div class="card-header  d-flex justify-content-between">
-       <h4><a class="link" href="/post/{{id}}">{{restaurant.restaurant_name}}</a></h4>    </div>
+
+       <h4><a class="link" href="/post/{{restaurant_id}}">{{restaurant.restaurant_name}}</a></h4>    </div>
+
         <p class="card-body">{{review_description}}</p>
 </div>
 
@@ -8,7 +10,10 @@
   {{#each this}}
   <section class="review">
     <div class="meta">
-      {{user.username}} on {{format_date created_at}}
+
+      {{user.username}}
+       {{!-- on {{format_date created_at}} --}}
+
     </div>
     <div class="text">
       {{review_description}}

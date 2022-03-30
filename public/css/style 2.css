@@ -18,7 +18,6 @@
     justify-items: center;
     display: flex;
     justify-content: center;
-
 }
 .main-login {
     margin: 3px;
@@ -27,6 +26,7 @@
     background-color: #EBEDEF ;
     border: 3px solid #EBEDEF;
     border-radius: 8px;
+   
 }
 #log-title {
     color: white;
@@ -111,7 +111,6 @@
     border-radius: 7px;
 }
 
-/* Homepage restaurant card formatting */
 
 
 
