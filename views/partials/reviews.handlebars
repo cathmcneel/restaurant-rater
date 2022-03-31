@@ -1,23 +1,8 @@
-<div class="card">
-    <div class="card-header  d-flex justify-content-between">
+<div class="container">
+    <div class="notification is-primary">
 
-       <h4><a class="link" href="/post/{{restaurant_id}}">{{restaurant.restaurant_name}}</a></h4>    </div>
+       <h4><a class="link" href="/post/{{restaurant_id}}">Restaurant Nmae: {{restaurant.restaurant_name}}</a></h4>    </div>
 
-        <p class="card-body">{{review_description}}</p>
 </div>
+        <div class="notification is-info">Your Review: {{review_description}}</div>
 
-<div class="reviews">
-  {{#each this}}
-  <section class="review">
-    <div class="meta">
-
-      {{user.username}}
-       {{!-- on {{format_date created_at}} --}}
-
-    </div>
-    <div class="text">
-      {{review_description}}
-    </div>
-  </section>
-  {{/each}}
-</div>

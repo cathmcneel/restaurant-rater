@@ -186,3 +186,8 @@
     background-color: var(--primary); 
    
 }
+
+.post-list-info{
+  background-color: lightyellow;
+  margin: 20px;
+}

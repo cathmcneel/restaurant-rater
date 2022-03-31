@@ -17,13 +17,13 @@
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
-  <div>
+  <div class="yourPost">
     {{#each posts as |post|}}
-      {{> reviews post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="buttom" >Edit review</a>
+      {{> dashboard-postinfo post}}
     {{/each}}
   </div>
 </section>
 {{/if}}
 
-<script src="/javascript/add-post.js"></script>
+{{!-- <script src="/javascript/add-post.js"></script> --}}
