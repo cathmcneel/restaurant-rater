@@ -7,7 +7,7 @@
   </div>
 
   <div>
-    <button type="submit">add review</button>
+    <button type="submit">Add Review</button>
     {{!-- <button type="button" class="upvote-btn">upvote</button> --}}
   </div>
 </form>
@@ -16,6 +16,7 @@
 {{> reviews post.reviews}}
 
 {{#if loggedIn}}
-<script src="/javascript/comment.js"></script>
-<script src="/javascript/upvote.js"></script>
+
+<script src="/javascript/review.js"></script>
+
 {{/if}}
