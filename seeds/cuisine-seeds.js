@@ -2,16 +2,12 @@ const { Cuisine } = require('../models')
 
 const cuisineData = [
     {
-        cuisine_name: 'French Restaurant'
+        cuisine_name: 'French restaurant'
     },
     {
-<<<<<<< HEAD
-        cuisine_name: 'Coffee Shop'
-=======
 
         cuisine_name: 'Japanese Restaurant'
 
->>>>>>> develop
     },
     {
         cuisine_name: 'Mexican Grill'

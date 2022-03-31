@@ -41,8 +41,8 @@ router.post('/', withAuth, (req, res) => {
 });
 
 router.put('/:id', withAuth, (req, res) => {
-    Comment.update({
-        comment_text: req.body.comment_text
+    Review.update({
+      review_description: req.body.review_description
     },
     {
       where: {
@@ -63,7 +63,7 @@ router.put('/:id', withAuth, (req, res) => {
   });
 
 router.delete('/:id', withAuth, (req, res) => {
-  Comment.destroy({
+  Review.destroy({
     where: {
       id: req.params.id
     }
