@@ -18,45 +18,6 @@ const restaurantData = [
         restaurant_description: 'Mexican fast casual',
         cuisine_id: 3,
         rating: 4
-<<<<<<< HEAD
-    },
-    {
-        restaurant_name: 'Shake Shack',
-        restaurant_description: 'Burger Shop',
-        cuisine_id: 4,
-        rating: 4
-    },
-    {
-        restaurant_name: 'Franks Italian',
-        restaurant_description: 'Italian homestyle food',
-        cuisine_id: 5,
-        rating: 4.5
-    },
-    {
-        restaurant_name: 'Golden Unicorn',
-        restaurant_description: 'Chinese Dim Sum',
-        cuisine_id: 6,
-        rating: 4
-    },
-    {
-        restaurant_name: 'Twelve Chairs',
-        restaurant_description: 'Israeli style food',
-        cuisine_id: 7,
-        rating: 5
-    },
-    {
-        restaurant_name: 'Catch Steak',
-        restaurant_description: 'Steakhouse',
-        cuisine_id: 8,
-        rating: 4
-    },
-    {
-        restaurant_name: 'Florios Pizza',
-        restaurant_description: 'Small Pizza Joint',
-        cuisine_id: 9,
-        rating: 5
-    }
-=======
 
     },
     {
@@ -78,7 +39,6 @@ const restaurantData = [
         rating: 2
     },
 
->>>>>>> develop
 ]
 
 

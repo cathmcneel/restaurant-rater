@@ -41,29 +41,28 @@ router.post('/', withAuth, (req, res) => {
 });
 
 router.put('/:id', withAuth, (req, res) => {
-    Comment.update({
-        comment_text: req.body.comment_text
-    },
-    {
-      where: {
-        id: req.params.id
+  Review.update({
+    review_description: req.body.review_description
+  },
+  {
+    where: {
+      id: req.params.id
+    }
+  })
+    .then(dbCommentData => {
+      if (!dbCommentData) {
+        res.status(404).json({ message: 'No comment found with this id!' });
+        return;
       }
+      res.json(dbCommentData);
     })
-      .then(dbCommentData => {
-        if (!dbCommentData) {
-          res.status(404).json({ message: 'No comment found with this id!' });
-          return;
-        }
-        res.json(dbCommentData);
-      })
-      .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  });
-
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
 router.delete('/:id', withAuth, (req, res) => {
-  Comment.destroy({
+  Review.destroy({
     where: {
       id: req.params.id
     }
