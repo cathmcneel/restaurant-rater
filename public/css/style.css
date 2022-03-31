@@ -70,6 +70,7 @@
     font-family: Didot; 
     font-size: 60px; 
     font-style: normal;
+   
 }
 
 #home {
@@ -99,6 +100,15 @@
     font-size: 30px; 
     font-style: normal;
 }
+#logout {
+    color: #212F3D;
+    margin-bottom: 1.5rem;
+    margin: 15px;
+    font-size:x-large;
+    font-family: Didot; 
+    font-size: 30px; 
+    font-style: normal;
+}
 
 #navbar {
     display: flex;
@@ -109,7 +119,8 @@
     background-color: #85929E;
     border-radius: 7px;
     align-items: center;
-    
+    width: 100%;
+ 
 }
 
 /* Homepage restaurant card formatting */
@@ -156,4 +167,53 @@
     border-radius: 7px;
 }
 
+/* Dashboard & submit review formatting */
 
+#submit-title {
+    color: #212F3D;
+    font-family: Didot; 
+    font-size: 25px; 
+    font-style: normal;
+    justify-content: center;
+    padding: 3px;
+    margin: 10px;
+    border: #5D6D7E solid 3px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    font-weight: bolder;
+}
+
+#dashboard-posts {
+    border: black 3px;
+}
+#your-posts {
+    color: #212F3D;
+    font-family: Didot; 
+    font-size: 25px; 
+    font-style: normal;
+    font-weight: bolder;
+}
+.mock-restaurant {
+    color: #212F3D;
+    font-family: Didot; 
+    font-size: 20px; 
+    font-style: normal;
+}
+#my-post-dash {
+    color: #212F3D;
+    font-family: Didot; 
+    justify-content: center;
+    padding: 3px;
+    margin: 10px;
+    border: #5D6D7E solid 3px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    font-weight: bolder;
+}
+#mock-post-ex {
+    padding: 3px;
+    margin: 10px;
+    border: #5D6D7E solid 3px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+}

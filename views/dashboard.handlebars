@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
+    <div>
+        <h1 id="submit-title">Submit a Review</h1>
+
+    </div>
+
 {{!-- <section>
   <h2>Create New Post</h2>
 
@@ -25,17 +30,38 @@
 </section> --}}
 
 
-
+<div id="dashboard-posts">
+  <div id="my-post-dash">
+  <div>
+    <h2 id="your-posts">Your Posts</h2>
+  </div>
 {{#if posts.length}}
+
 <section>
-  <h2>Your Posts</h2>
+ 
   <div>
     {{#each posts as |post|}}
       {{> reviews post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     {{/each}}
   </div>
+ 
 </section>
 {{/if}}
+ <div id="mock-post-ex">
+    <h1 class="mock-restaurant">Restaurant: Chipotle</h1>
+    <p class="mock-restaurant">Rating: 3/5</p>
+  </div>
+   <div id="mock-post-ex">
+    <h1 class="mock-restaurant">Restaurant: Albert's Italian</h1>
+    <p class="mock-restaurant">Rating: 4/5</p>
+  </div>
+   <div id="mock-post-ex">
+    <h1 class="mock-restaurant">Restaurant: La Fonda</h1>
+    <p class="mock-restaurant">Rating: 4.5/5</p>
+  </div>
 
 <script src="/javascript/add-post.js"></script>
+
+</div>
+</div>
