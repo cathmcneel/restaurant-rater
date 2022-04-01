@@ -3,12 +3,11 @@
 {{#if loggedIn}}
 <form class="review-form">
   <div>
-    <textarea name="review-body"></textarea>
+    <textarea name="review-body" class="input is-rounded" type="text" placeholder="Your review is here"></textarea>
   </div>
 
   <div>
-    <button type="submit">Add Review</button>
-    {{!-- <button type="button" class="upvote-btn">upvote</button> --}}
+    <button class="button is-primary" type="submit">Add Review</button>
   </div>
 </form>
 {{/if}}
