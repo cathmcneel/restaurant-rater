@@ -9,31 +9,6 @@
 
 </head>
 
-
-
-{{!-- <div class="box">
-  <article class="media">
-    <div class="media-left">
-    <figure class="image is-64x64">
-      <img src= "" alt="Image">
-    </figure>
-    </div>
-    <div class="media-content">
-      <div class="content">
-        <p>
-          <strong>Name</strong> <small>Rating</small>
-          <br>
-          Description
-        </p>
-      </div>
-      <a class="level-item" aria-label="like">
-            <span class="icon is-small">
-              <i class="fas fa-heart" aria-hidden="true"></i>
-            </span>
-          </a>
-    </div>
-  </article>
-</div> --}}
 <div class="homepage-posts">
     <ol class="post-list">
   {{#each posts as |post|}}
@@ -43,33 +18,6 @@
   {{/each}}
 </ol>
 </div>
-
-
-{{!--  
-    <main>
-            {{{ body }}}
-
-                <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    </main>
-    <footer class="footer rows pb-2">
-        <div class="row-is-full content has-text-centered">
-            <p>
-            <a href="/">homepage</a>{{#if loggedIn}} |
-            <a href="/dashboard/">dashboard</a> |
-            <a href="/dashboard/create/">create new post</a>
-            {{else}}
-             | <a href="/login/">login</a>
-            {{/if}}
-            </p>
-        </div>
-    </footer>
-  </div>
-{{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
-{{/if}}
-</body>
-</html> --}}
 
 
 
