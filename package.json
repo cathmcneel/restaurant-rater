@@ -5,10 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "start": "node server.js",
+    "heroku-postbuild": "node seeds/index.js",
     "seeds": "node seeds/index.js"
-
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,6 @@
     "express": "^4.17.3",
     "express-handlebars": "^6.0.3",
     "express-session": "^1.17.2",
-
     "mysql2": "^2.3.3",
     "sequelize": "^6.17.0"
   }

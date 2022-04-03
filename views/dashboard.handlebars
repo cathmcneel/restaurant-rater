@@ -2,66 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant-rater-dashboard</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant-rater-dashboard</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
-    <div>
-        <h1 id="submit-title">Submit a Review</h1>
+<div>
+  <h1 id="submit-title">Submit a Review</h1>
 
-    </div>
-
-{{!-- <section>
-  <h2>Create New Post</h2>
-
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-        <label class="form-label" for="content">Content</label>
-        <input id="content" name="content" class="form-input" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section> --}}
+</div>
 
 
 <div id="dashboard-posts">
   <div id="my-post-dash">
-  <div>
-    <h2 id="your-posts">Your Posts</h2>
-  </div>
-{{#if posts.length}}
+    <div>
+      <h2 id="your-posts">Your Posts</h2>
+    </div>
+    {{#if posts.length}}
 
-<section>
- 
-  <div>
-    {{#each posts as |post|}}
-      {{> reviews post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    {{/each}}
-  </div>
- 
-</section>
-{{/if}}
- {{!-- <div id="mock-post-ex">
-    <h1 class="mock-restaurant">Restaurant: Chipotle</h1>
-    <p class="mock-restaurant">Rating: 3/5</p>
-  </div>
-   <div id="mock-post-ex">
-    <h1 class="mock-restaurant">Restaurant: Albert's Italian</h1>
-    <p class="mock-restaurant">Rating: 4/5</p>
-  </div>
-   <div id="mock-post-ex">
-    <h1 class="mock-restaurant">Restaurant: La Fonda</h1>
-    <p class="mock-restaurant">Rating: 4.5/5</p>
-  </div>
+    <section>
 
-<script src="/javascript/add-post.js"></script>
+      <div>
+        {{#each posts as |post|}}
+        {{> reviews post}}
+        <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+        {{/each}}
+      </div>
 
-</div>
-</div> --}}
+    </section>
+    {{/if}}

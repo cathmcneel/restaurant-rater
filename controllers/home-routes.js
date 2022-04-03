@@ -35,6 +35,7 @@ router.get('/', (req, res) => {
         });
 });
 
+//Get Restaurant by ID
 router.get('/post/:id', (req, res) => {
     Restaurant.findOne({
         where: {
@@ -77,7 +78,7 @@ router.get('/post/:id', (req, res) => {
 
 
 
-
+//Login page
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
@@ -87,6 +88,7 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+//SignUp page
 router.get('/signup', (req, res) => {
     res.render('signup');
 });

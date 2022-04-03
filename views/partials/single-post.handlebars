@@ -1,10 +1,8 @@
-<div class="reviews columns ">
+<div class="reviews notification">
     {{#each this}}
-    <section class="column ">
-        <div class="notification ">
-            {{review_description}}
-        </div>
-        <div class="">Post By {{user.username}}
+    <section class="">
+        <div class=" ">
+            Review: {{review_description}} <span class= "has-text-info-dark" >Post By {{user.username}}</span>
         </div>
      
     </section>
