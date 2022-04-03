@@ -127,5 +127,4 @@ N/A
 
 ## [Demo-Output](#table-of-contents)
 ## The demo README on dist file will look like the below:
-![project2Demo](https://user-images.githubusercontent.com/94802639/161416622-4eb0fb95-7554-4af8-92ce-2b6a4b362193.gif)
-
+![project2Demo](https://user-images.githubusercontent.com/94802639/161417792-7245c8f5-af46-4490-814a-cd776e70ce7f.gif)
