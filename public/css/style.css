@@ -20,6 +20,8 @@
 
 }
 .main-login {
+    position: relative;
+    text-align: center;
     margin: 3px;
     padding: 3px;
     width: 500px;
@@ -59,8 +61,10 @@
     color: #212F3D;
 }
 #login-button {
-    margin-left: 200px;
     justify-content: center;
+}
+#sign-btn {
+    margin-bottom: 20px;
 }
 
 /*Homepage and nav bar formatting */
@@ -223,6 +227,7 @@
     background-color: whitesmoke;
     border-radius: 7px;
 }
+/*Handlebars styling*/
 #rest-name-css {
     position: relative;
     text-align: center;
