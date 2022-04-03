@@ -96,7 +96,7 @@ router.post('/logout', (req, res) => {
   }
 });
 
-//Updata user by ID
+//Update user by ID
 router.put('/:id', (req, res) => {
   User.update(req.body, {
     individualHooks: true,

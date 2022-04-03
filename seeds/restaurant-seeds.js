@@ -3,7 +3,7 @@ const { Restaurant } = require('../models')
 const restaurantData = [
     {
         restaurant_name: 'Le Coucou',
-        restaurant_description: 'French Restaurant',
+        restaurant_description: 'French Bistro',
         cuisine_id: 1,
         rating: 5
     },
@@ -21,20 +21,20 @@ const restaurantData = [
 
     },
     {
-        restaurant_name: 'Cafe Bella Vita Italian Restaurant',
+        restaurant_name: 'Cafe Bella Vita Italian Cuisine',
         restaurant_description: 'Italian Food',
         cuisine_id: 2,
         rating: 5
     },
     {
         restaurant_name: 'Zara Cafe Grill',
-        restaurant_description: 'Coffe and grill',
+        restaurant_description: 'Coffee & Grill',
         cuisine_id: 2,
         rating: 4
     },
     {
         restaurant_name: 'French Louie',
-        restaurant_description: 'A French-American restaurant and cafe in Brooklyn.',
+        restaurant_description: 'French-American Brasserie.',
         cuisine_id: 3,
         rating: 2
     },

@@ -63,7 +63,7 @@ Please contact me using the following options:
 ```
 As a consumer I would like to
 Browse restaurants by rating, cuisine, & price point
-Add reviews and ratings 
+As well as add reviews and ratings 
 
 ```
 
