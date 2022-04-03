@@ -1,35 +1,19 @@
 <article>
   <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
+  <h2 id="edit-post-title">
     Edit Post
   </h2>
   <form class="edit-post-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_url post.post_url}})</span>
+      <input class="input is-rounded" id="input-box" name="review" type="text" value="{{post.review_description}}" />
     </div>
-    <div>
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-    </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
+    <button class="button is-primary" type="submit">Save Post</button>
+    <button class="delete-post-btn button is-danger" type="button">Delete Post</button>
   </form>
 </article>
 
-<form class="review-form">
-  <div>
-    <textarea name="review-body"></textarea>
-  </div>
 
-  <div>
-    <button type="submit">Add review</button>
-  </div>
-</form>
 
-{{> comments post.comments}}
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script>

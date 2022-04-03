@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+//Get All review data form db
 router.get('/', (req, res) => {
   Review.findAll()
     .then(dbCommentData => res.json(dbCommentData))
@@ -11,6 +12,7 @@ router.get('/', (req, res) => {
     });
 });
 
+//Get by ID
 router.get('/:id', (req, res) => {
     Review.findAll({
             where: {
@@ -24,9 +26,9 @@ router.get('/:id', (req, res) => {
         })
 });
 
-router.post('/', withAuth, (req, res) => {
-  // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
 
+//fetch data from database
+router.post('/', withAuth, (req, res) => {
   Review.create({
     review_description: req.body.review_description,
     user_id: req.session.user_id,
@@ -40,30 +42,32 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
+//update review by ID
 router.put('/:id', withAuth, (req, res) => {
-    Comment.update({
-        comment_text: req.body.comment_text
-    },
-    {
-      where: {
-        id: req.params.id
+  Review.update({
+    review_description: req.body.review_description
+  },
+  {
+    where: {
+      id: req.params.id
+    }
+  })
+    .then(dbCommentData => {
+      if (!dbCommentData) {
+        res.status(404).json({ message: 'No comment found with this id!' });
+        return;
       }
+      res.json(dbCommentData);
     })
-      .then(dbCommentData => {
-        if (!dbCommentData) {
-          res.status(404).json({ message: 'No comment found with this id!' });
-          return;
-        }
-        res.json(dbCommentData);
-      })
-      .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  });
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
 
+//delete review by ID
 router.delete('/:id', withAuth, (req, res) => {
-  Comment.destroy({
+  Review.destroy({
     where: {
       id: req.params.id
     }

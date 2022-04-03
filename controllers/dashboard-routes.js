@@ -3,6 +3,8 @@ const sequelize = require('../config/connection');
 const { Restaurant, User, Review } = require('../models');
 const withAuth = require('../utils/auth');
 
+
+//GET All review
 router.get('/', withAuth, (req, res) => {
     Review.findAll({
         where: {
@@ -24,7 +26,6 @@ router.get('/', withAuth, (req, res) => {
     })
         .then(dbPostData => {
             const posts = dbPostData.map(post => post.get({ plain: true }));
-            console.log("fuck");
             console.log(posts);
             res.render('dashboard', {
                 posts,
@@ -36,40 +37,42 @@ router.get('/', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-
+//GET post to edit by ID
 router.get('/edit/:id', withAuth, (req, res) => {
-    Post.findByPk(req.params.id, {
-      attributes: [
-        'id',
-        'review_description',
-        'restaurant_id'
-      ],
-      include: [{
-        model: Restaurant,
-        attributes: ['id', 'restaurant_name', 'restaurant_description', 'cuisine_id', 'rating'],
+  Review.findOne({
+    where: {
+      id: req.params.id
+    },
+    attributes: [
+      'id',
+      'review_description',
+      'restaurant_id'
+    ],
+    include: [{
+      model: Restaurant,
+      attributes: ['id', 'restaurant_name', 'restaurant_description', 'cuisine_id', 'rating'],
     }, {
-        model: User,
-        attributes: ['username']
+      model: User,
+      attributes: ['username']
     }
     ]
+  })
+    .then(dbPostData => {
+      if (dbPostData) {
+        const post = dbPostData.get({ plain: true });
+
+        res.render('edit-post', {
+          post,
+          loggedIn: true
+        });
+      } else {
+        res.status(404).end();
+      }
     })
-      .then(dbPostData => {
-        if (dbPostData) {
-          const post = dbPostData.get({ plain: true });
-          
-          res.render('edit-post', {
-            post,
-            loggedIn: true
-          });
-        } else {
-          res.status(404).end();
-        }
-      })
-      .catch(err => {
-        res.status(500).json(err);
-      });
-  });
-  
+    .catch(err => {
+      res.status(500).json(err);
+    });
+});
 
 
 module.exports = router;

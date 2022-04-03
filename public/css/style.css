@@ -1,6 +1,5 @@
 *{
     margin: 2px;
-    
 }
 
 /* Login Page formatting */
@@ -21,6 +20,8 @@
 
 }
 .main-login {
+    position: relative;
+    text-align: center;
     margin: 3px;
     padding: 3px;
     width: 500px;
@@ -60,8 +61,10 @@
     color: #212F3D;
 }
 #login-button {
-    margin-left: 200px;
     justify-content: center;
+}
+#sign-btn {
+    margin-bottom: 20px;
 }
 
 /*Homepage and nav bar formatting */
@@ -70,6 +73,7 @@
     font-family: Didot; 
     font-size: 60px; 
     font-style: normal;
+   
 }
 
 #home {
@@ -99,6 +103,15 @@
     font-size: 30px; 
     font-style: normal;
 }
+#logout {
+    color: #212F3D;
+    margin-bottom: 1.5rem;
+    margin: 15px;
+    font-size:x-large;
+    font-family: Didot; 
+    font-size: 30px; 
+    font-style: normal;
+}
 
 #navbar {
     display: flex;
@@ -109,10 +122,13 @@
     background-color: #85929E;
     border-radius: 7px;
     align-items: center;
+    width: 100%;
     
+ 
 }
 
 /* Homepage restaurant card formatting */
+
 .card-flex {
     display: flex;
     flex-wrap: wrap;
@@ -143,6 +159,11 @@
     width: 90%;
     border-radius: 7px;
 }
+#rest-post-name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 #rest-name {
     border: #5D6D7E solid 3px;
     color: #212F3D;
@@ -156,4 +177,92 @@
     border-radius: 7px;
 }
 
+/* Dashboard & submit review formatting */
 
+#submit-title {
+    color: #212F3D;
+    font-family: Didot; 
+    font-size: 25px; 
+    font-style: normal;
+    justify-content: center;
+    padding: 3px;
+    margin: 10px;
+    border: #5D6D7E solid 3px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    font-weight: bolder;
+}
+
+#dashboard-posts {
+    border: black 3px;
+}
+#your-posts {
+    color: #212F3D;
+    font-family: Didot; 
+    font-size: 25px; 
+    font-style: normal;
+    font-weight: bolder;
+}
+.mock-restaurant {
+    color: #212F3D;
+    font-family: Didot; 
+    font-size: 20px; 
+    font-style: normal;
+}
+#my-post-dash {
+    color: #212F3D;
+    font-family: Didot; 
+    justify-content: center;
+    padding: 3px;
+    margin: 10px;
+    border: #5D6D7E solid 3px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    font-weight: bolder;
+}
+#mock-post-ex {
+    padding: 3px;
+    margin: 10px;
+    border: #5D6D7E solid 3px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+}
+/*Handlebars styling*/
+#rest-name-css {
+    position: relative;
+    text-align: center;
+}
+#rating-css {
+    font-size: 30px;
+    font-family: Didot;
+    font:bold;
+    color: #EBEDEF;
+    position: relative;
+    left: 25px;
+    
+}
+#input-box {
+    max-width: 30%;
+    height: 85px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#review-input {
+    max-width: 30%;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.edit-post-form {
+    position: relative;
+    text-align: center;
+}
+.review-form {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
