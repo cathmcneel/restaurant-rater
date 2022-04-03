@@ -124,6 +124,7 @@
 }
 
 /* Homepage restaurant card formatting */
+
 .card-flex {
     display: flex;
     flex-wrap: wrap;
@@ -153,6 +154,11 @@
     background-color: #EBEDEF;
     width: 90%;
     border-radius: 7px;
+}
+#rest-post-name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 #rest-name {
     border: #5D6D7E solid 3px;
@@ -216,4 +222,42 @@
     border: #5D6D7E solid 3px;
     background-color: whitesmoke;
     border-radius: 7px;
+}
+#rest-name-css {
+    position: relative;
+    text-align: center;
+}
+#rating-css {
+    font-size: 30px;
+    font-family: Didot;
+    font:bold;
+    color: #EBEDEF;
+    position: relative;
+    left: 25px;
+    
+}
+#input-box {
+    max-width: 30%;
+    height: 85px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#review-input {
+    max-width: 30%;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.edit-post-form {
+    position: relative;
+    text-align: center;
+}
+.review-form {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
 }
