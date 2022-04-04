@@ -1,4 +1,4 @@
-# restaurant-rater
+# Restaurant-Rater
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -51,7 +51,7 @@ Please contact me using the following options:
 
 [Catherine McNeel-GitHub](https://github.com/cathmcneel)
 
-[Isabel shelly-GitHub](https://github.com/ishelly1997)
+[Isabel Shelly-GitHub](https://github.com/ishelly1997)
 
 [Mehmet B Huyuk-GitHub](https://github.com/glgberat)
 
@@ -113,7 +113,6 @@ Your project should fulfill the following requirements:
 * Dotenv
 * bcrypt
 * connect-session-sequelize
-* dotenv
 * express-handlebars
 * express-session
 * handlebars
