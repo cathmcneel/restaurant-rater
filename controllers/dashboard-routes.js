@@ -26,7 +26,6 @@ router.get('/', withAuth, (req, res) => {
     })
         .then(dbPostData => {
             const posts = dbPostData.map(post => post.get({ plain: true }));
-            console.log("fuck");
             console.log(posts);
             res.render('dashboard', {
                 posts,
@@ -38,7 +37,7 @@ router.get('/', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-
+//GET post to edit by ID
 router.get('/edit/:id', withAuth, (req, res) => {
   Review.findOne({
     where: {

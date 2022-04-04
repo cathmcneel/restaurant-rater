@@ -1,7 +1,6 @@
 *{
     margin: 2px;
 }
-
 /* Login Page formatting */
 #login-form {
     background-color: #EBEDEF ;
@@ -20,7 +19,9 @@
 
 }
 .main-login {
-    margin: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 390px;
     padding: 3px;
     width: 500px;
     background-color: #EBEDEF ;
@@ -59,8 +60,10 @@
     color: #212F3D;
 }
 #login-button {
-    margin-left: 200px;
     justify-content: center;
+}
+#sign-btn {
+    margin-bottom: 20px;
 }
 
 /*Homepage and nav bar formatting */
@@ -99,6 +102,10 @@
     font-size: 30px; 
     font-style: normal;
 }
+#login-box {
+    position: relative;
+    align-items: center;
+}
 #logout {
     color: #212F3D;
     margin-bottom: 1.5rem;
@@ -124,22 +131,27 @@
 }
 
 /* Homepage restaurant card formatting */
-.card-flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-}
 
+/*#card-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}*/
+#rest-post-list {
+    display: flex;
+    flex-direction: row;
+}
 .media {
-    width: 30%;
+    height: 345px;
+    width: 345px;
     border: #5D6D7E solid 3px;
     background-color: #85929E;
     border-radius: 7px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 30px;
+    margin: 20px;
 
 }
 .media-left {
@@ -151,8 +163,16 @@
     font-size: 30px; 
     font-style: normal;
     background-color: #EBEDEF;
-    width: 90%;
+    width: 100%;
     border-radius: 7px;
+    position: relative;
+    align-items: center;
+}
+#rest-post-name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
 }
 #rest-name {
     border: #5D6D7E solid 3px;
@@ -165,6 +185,7 @@
     background-color: #EBEDEF;
     width: 40%;
     border-radius: 7px;
+    padding: 3px;
 }
 
 /* Dashboard & submit review formatting */
@@ -217,3 +238,55 @@
     background-color: whitesmoke;
     border-radius: 7px;
 }
+/*Handlebars styling*/
+#rest-name-css {
+    position: relative;
+    text-align: center;
+}
+#rating-css {
+    font-size: 30px;
+    font-family: Didot;
+    font:bold;
+    color: #EBEDEF;
+    position: relative;
+    left: 25px;
+    
+}
+#input-box {
+    max-width: 30%;
+    height: 85px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#review-input {
+    max-width: 30%;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.edit-post-form {
+    position: relative;
+    text-align: center;
+}
+.review-form {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+h4 {
+    position: relative;
+    text-align: center;
+}
+#rest-post-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* #resto-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+} */

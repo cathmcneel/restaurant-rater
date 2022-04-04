@@ -1,14 +1,14 @@
 <article>
   <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
+  <h2 id="edit-post-title">
     Edit Post
   </h2>
   <form class="edit-post-form">
     <div>
-      <input class="input is-rounded" name="review" type="text" value="{{post.review_description}}" />
+      <input class="input is-rounded" id="input-box" name="review" type="text" value="{{post.review_description}}" />
     </div>
-    <button class="button is-primary" type="submit">Save post</button>
-    <button class="delete-post-btn button is-primary" type="button" >Delete post</button>
+    <button class="button is-primary" type="submit">Save Post</button>
+    <button class="delete-post-btn button is-danger" type="button">Delete Post</button>
   </form>
 </article>
 
