@@ -8,14 +8,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 
 </head>
-
-<div class="homepage-posts">
-    <ol class="post-list" id="rest-post-list">
+  <div id="homepage-posts">
+    <ol class="post-list" id="rest-post-list" >
   {{#each posts as |post|}}
 
     {{> post-info post }}
 
   {{/each}}
-</ol>
-</div>
-
+  </ol>
+  </div>

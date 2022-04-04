@@ -34,7 +34,7 @@ const restaurantData = [
     },
     {
         restaurant_name: 'French Louie',
-        restaurant_description: 'French-American Brasserie.',
+        restaurant_description: 'Modern French Fare.',
         cuisine_id: 3,
         rating: 2
     },
